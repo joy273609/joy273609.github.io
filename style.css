@@ -4,3 +4,69 @@
     text-decoration: none;
     list-style: none;
 }
+
+@font-face{
+    font-family: "jeju";
+    src: url('./font/JejuHallasan-Regular.ttf') format('truetype');
+    
+}
+html,body{
+    font-family:"jeju",Arial, Helvetica,'微軟正黑體' ,sans-serif;
+}
+.header{
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    align-items: center;
+}
+.container{
+    background-color: #faf8f8;
+}
+.header p{
+    font-size: 30px;
+}
+
+.header li{
+    float: left;
+    padding-right: 3vw;
+}
+
+.header li a{
+    color: black;
+    font-size: 18px;
+}
+
+.header li a:hover{
+    color: rgb(47, 47, 167);
+    cursor: pointer;
+}
+
+.container{
+    padding-top: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+#banner{
+    background-image: url(./image/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 1200px;
+    color: #ffffff;
+    font-size: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.title{
+    font-size: 50px;
+}
+#about{
+    padding-top: 100px;
+}

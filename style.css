@@ -29,7 +29,7 @@ html,body{
     background-color: #faf8f8;
 }
 .header p{
-    font-size: 30px;
+    font-size: 38px;
     padding-left: 1vw;
 }
 
@@ -40,7 +40,7 @@ html,body{
 
 .header li a{
     color: black;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .header li a:hover{
@@ -75,7 +75,7 @@ html,body{
     color: rgb(51, 51, 51);
 }
 #about{
-    padding-top: 120px;
+    padding: 120px 0;
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
@@ -130,6 +130,14 @@ html,body{
 }
 
 #experience{
-    padding-top: 120px;
     clear: both;
+    background-image: url(./image/experience.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    height: 2000px;
+}
+
+#skill{
+    padding-top: 120px;
 }

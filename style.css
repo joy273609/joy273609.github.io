@@ -13,9 +13,13 @@ a:visited{
     src: url('./font/JejuHallasan-Regular.ttf') format('truetype');
     
 }
-html,body{
-    font-family:"jeju",Arial, Helvetica,'微軟正黑體' ,sans-serif;
+
+@font-face{
+    font-family: "nani";
+    src: url('./font/NaniFont-Regular.ttf') format('truetype');
+    
 }
+
 .header{
     background-color: #ffffff;
     width: 100%;
@@ -31,6 +35,7 @@ html,body{
 .header p{
     font-size: 38px;
     padding-left: 1vw;
+    font-family: "jeju"
 }
 
 .header li{
@@ -41,6 +46,7 @@ html,body{
 .header li a{
     color: black;
     font-size: 24px;
+    font-family: "jeju"
 }
 
 .header li a:hover{
@@ -68,10 +74,12 @@ html,body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: "jeju"
     }
 
 .title{
     font-size: 65px;
+    font-family: "jeju"
 }
 #about{
     padding: 120px 0;
@@ -80,6 +88,7 @@ html,body{
     flex-wrap: nowrap;
     text-align: center;
     color: rgb(51, 51, 51);
+    font-family: "jeju"
 }
 
 #about .box{
@@ -136,6 +145,7 @@ html,body{
     background-position: center;
     color: #ffffff;
     height: 100%;
+    font-family: "jeju"
 }
 
 #experience h1{
@@ -149,6 +159,52 @@ html,body{
 #experience .timeline img{
     max-width: 50%;
     padding: 80px 0 350px;
+}
+
+#projects{
+    background-image: url(./image/project.JPG);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1400px;
+    width: auto;
+}
+
+#projects .title{
+    color: white;
+    text-align: center;
+    padding: 40px 0 80px;
+}
+
+.box1{
+    background-color: #940d0d;
+}
+#projects h2{
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+}
+
+#projects .pjBox{
+    background-color: #cc1212;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#projects .card{
+    width: 30%;
+    height: 300px;
+    background-color: #ffffff53;
+    margin-bottom: 60px;
+}
+
+.card1,.card2,.card3{
+    font-family: "jeju";
+}
+.card4,.card5,.card6{
+    font-family: "nani";
 }
 
 #tools{

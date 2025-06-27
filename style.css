@@ -169,6 +169,7 @@ a:visited{
     background-size: cover;
     height: 1400px;
     width: auto;
+    justify-items: center;
 }
 
 #projects .title{
@@ -177,27 +178,30 @@ a:visited{
     padding: 40px 0 80px;
 }
 
-.box1{
-    background-color: #940d0d;
-}
-#projects h2{
-    color: #ffffff;
-    text-align: center;
-    align-items: center;
-}
 
 #projects .pjBox{
     background-color: #cc1212;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    width: 80vw;
+    justify-content: center;
 }
 
 #projects .card{
     width: 30%;
-    height: 300px;
+    height: auto;
     background-color: #ffffff53;
-    margin-bottom: 60px;
+    margin:0 10px 60px;
+    padding: 50px 0;
+    border-radius: 15px;
+}
+
+#projects h2{
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    font-size: 32px ;
+
 }
 
 .card1,.card2,.card3{
@@ -209,4 +213,15 @@ a:visited{
 
 #tools{
     padding-top: 120px;
+}
+
+/*======平板css======*/
+@media screen and (max-width:1200px) and (min-width:769px){
+
+
+}
+
+/*======手機css======*/
+@media screen and (max-width:768px){
+
 }

@@ -5,21 +5,37 @@
     list-style: none;
 }
 a:visited{
-    color:rgb(51, 51, 51);
+    color:rgb(46, 46, 46);
 }
+.comme-regular{
+    font-family: "Comme", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    }
+.comme-bold{
+    font-family: "Comme", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    }
+
 
 @font-face{
-    font-family: "jeju";
-    src: url('./font/JejuHallasan-Regular.ttf') format('truetype');
+    font-family: "swei-bold";
+    src: url('./font/SweiHalfMoonCJKtc-Bold.ttf') format('truetype');
     
 }
-
 @font-face{
-    font-family: "nani";
-    src: url('./font/NaniFont-Regular.ttf') format('truetype');
+    font-family: "swei-light";
+    src: url('./font/SweiHalfMoonCJKtc-Light.ttf') format('truetype');
     
 }
-
+@font-face{
+    font-family: "swei-regular";
+    src: url('./font/SweiHalfMoonCJKtc-Regular.ttf') format('truetype');
+    
+}
 .header{
     background-color: #ffffff;
     width: 100%;
@@ -30,12 +46,12 @@ a:visited{
     align-items: center;
 }
 .container{
-    background-color: #faf8f8;
+    background-color: #E6E6E6;
 }
 .header p{
     font-size: 38px;
     padding-left: 1vw;
-    font-family: "jeju"
+    letter-spacing: 3px;
 }
 
 .header li{
@@ -45,12 +61,14 @@ a:visited{
 
 .header li a{
     color: black;
-    font-size: 24px;
-    font-family: "jeju"
+    font-size: 26px;
+    font-family: "Comme", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
 .header li a:hover{
-    color: rgb(47, 47, 167);
+    color: rgb(206, 124, 42);
     cursor: pointer;
 }
 
@@ -67,58 +85,74 @@ a:visited{
     background-position: center;
     background-attachment: fixed;
     height: 1200px;
-    color: #ffffff;
-    font-size: 300px;
-    text-shadow: #333333 2px 3px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: "jeju";
     }
 
-.title{
-    font-size: 65px;
-    font-family: "jeju"
-}
+    #banner p{
+        font-size: 300px;
+        background-color: rgb(126, 124, 124);
+        color: transparent;
+        text-shadow: 4px 2px 3px #ffffff;
+        background-clip: text;
+        letter-spacing: 50px;
+    }
+
+
 #about{
     padding: 120px 0;
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    text-align: center;
     color: rgb(51, 51, 51);
-    font-family: "jeju"
 }
 
+#about h1{
+    font-size: 70px;
+    letter-spacing: 5px;
+}
 #about .box{
     justify-items: center;
+    max-width: 70%;
+
 }
 
 #about p{
-    padding: 0 50px 0;
-    margin: 80px;
+    padding: 0 150px 0;
+    margin: 50px;
     font-size: 32px;
-    max-width: 50%;
-    line-height: 80px;
+    line-height: 55px;
+    font-family: "swei-regular";
+    font-size: 23px;
 }
+
 
 #about a{
-    color: rgb(255, 255, 255);
     display: flex;
     text-align:end;
-    background-color: rgb(50, 50, 50);
     padding: 15px 20px;
-    border-radius: 30px;
-    border-style:solid ;
-    border-color: rgb(50, 50, 50);
-
-}
-#about a:hover{
+    border-radius: 25px;
     color: rgb(50, 50, 50);
-    background-color: #ffffff;
-    border-style:solid ;
-    border-color: rgb(50, 50, 50);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(50, 50, 50);
+    box-shadow:0px 6px 0px  rgb(50, 50, 50);
+    position: relative;
+    text-decoration: none;
+    transition: all 0.1s ease;
+    transform: translateY(0);
+}
+
+
+#about a:hover{
+    transform: translateY(4px);
+    box-shadow:0px 2px 0px  rgb(50, 50, 50)
+}
+
+#about .box2 a:active {
+    transform: translateY(4px);
+    box-shadow:0px 0px 0px  rgb(50, 50, 50)
 }
 
 #about h2{
@@ -139,19 +173,24 @@ a:visited{
 
 #experience{
     clear: both;
-    background-image: url(./image/123.jpg);
+    background-image: url(./image/experience.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: #ffffff;
     height: 100%;
-    font-family: "jeju";
 }
 
 #experience h1{
     text-align: center;
-    padding: 40px 0 80px;
+    padding: 60px 0 80px;
+    background-color: rgb(68, 68, 68);
+    color: transparent;
+    text-shadow: 2px 2px 2px #ffffff;
+    background-clip: text;
+    font-size: 90px;
+    letter-spacing: 10px;
 }
+
 #experience .timeline{
     display: flex;
     justify-content: center;
@@ -172,10 +211,14 @@ a:visited{
     justify-items: center;
 }
 
-#projects .title{
-    color: white;
+#projects h1{
     text-align: center;
-    padding: 40px 0 80px;
+    padding: 60px 0 80px;
+    background-color: rgb(96, 96, 96);
+    color: transparent;
+    text-shadow: 2px 2px 2px #ffffff;
+    background-clip: text;
+    font-size: 90px;
 }
 
 
@@ -202,10 +245,10 @@ a:visited{
 }
 
 .card1,.card2,.card3{
-    font-family: "jeju";
+    font-family: "swei-regular";
 }
 .card4,.card5,.card6{
-    font-family: "nani";
+    font-family: "swei-regular";
 }
 
 #tools{

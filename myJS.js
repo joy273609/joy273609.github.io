@@ -12,3 +12,13 @@ $(function () {
     $(".modal").fadeOut(200);
     });
 });
+
+//跑馬燈
+$(function(){
+    $("#openExhibition").click(function(){
+    $("#overlay, #modal-EXHIBITION").fadeIn(200);
+    });
+    $("#closeExhibition, #overlay").click(function(){
+    $("#overlay, #modal-EXHIBITION").fadeOut(200);
+    });
+});

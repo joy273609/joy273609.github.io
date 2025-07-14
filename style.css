@@ -267,10 +267,10 @@ a:visited{
 .modal{
     display: none;
     position: fixed;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgb(220, 16, 16);
+    background: rgb(0, 0, 0);
     color: #ffffff;
     padding: 30px;
     border-radius: 15px;
@@ -286,9 +286,73 @@ a:visited{
     padding-bottom: 10px;
 }
 
+.modal-content p{
+    padding-bottom: 15px;
+}
+
 .modal-content{
     position: relative;
 }
+
+.carousel-2rows{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.marquee-row{
+    overflow: hidden;
+    white-space: nowrap;
+}
+.track{
+    display: flex;
+    width: fit-content; 
+    animation: scroll-left 80s linear infinite;
+}
+
+.track:hover,
+.marquee-row.reverse .track:hover{
+    animation-play-state: paused;
+}
+
+.marquee-row.reverse .track{
+    animation: scroll-right 80s linear infinite;
+}
+
+.pic{
+    flex: 0 0 auto;
+    width: auto;
+    height: 380px;
+    margin-right: 16px;
+}
+
+.pic img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@keyframes scroll-left{
+    0%{ 
+        transform: translateX(0); 
+    }
+    100%{ 
+        transform: translateX(calc(-50% - 8px)); 
+    }
+}
+
+@keyframes scroll-right{
+    0%{ 
+        transform: translateX(calc(-50% - 8px)); 
+    }
+    100% { 
+        transform: translateX(0); 
+    }
+}
+
 
 .close-btn{
     position: absolute;

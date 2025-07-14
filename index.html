@@ -61,40 +61,94 @@
         <section id="projects">
             <h1 class="comme-bold">PROJECTS</h1>
             <div class="pjBox">
-                <div class="card card1" data-target="#modal-EXHIBITION">
+                <div class="card card1" data-target="#modal-EXHIBITION" id="openExhibition">
                     <h2>EXHIBITION</h2>
                 </div>
-                <div class="card card2" data-target="#modal-SYMPOSIUM">
+                <div class="card card2" data-target="#modal-SYMPOSIUM" id="openSYMPOSIUM">
                     <h2>SYMPOSIUM</h2>
                 </div>
-                <div class="card card3" data-target="#modal-WEBINAR">
+                <div class="card card3" data-target="#modal-WEBINAR" id="openWEBINAR">
                     <h2>WEBINAR</h2>
                 </div>
-                <div class="card card4" data-target="#modal-DESIGN">
+                <div class="card card4" data-target="#modal-DESIGN" id="openDESIGN">
                     <h2>DESIGN</h2>
                 </div>
-                <div class="card card5" data-target="#modal-FLIM">
+                <div class="card card5" data-target="#modal-FLIM" id="openFLIM">
                     <h2>FLIM</h2>
                 </div>
-                <div class="card card6" data-target="#modal-Calendar">
+                <div class="card card6" data-target="#modal-Calendar" id="openCalendar">
                     <h2>Calendar<br>System</h2>
                 </div>
-                <div class="card card7" data-target="#modal-helper">
+                <div class="card card7" data-target="#modal-helper" id="openhelper">
                     <h2>回診小幫手</h2>
                 </div>
-                <div class="card card8" data-target="#modal-dog">
+                <div class="card card8" data-target="#modal-dog" id="opendog">
                     <h2>寵物登記數據<br>預測工具</h2>
                 </div>
             </div>
 
-            <div class="modal-overlay"></div>
+            <div class="modal-overlay" id="overlay"></div>
             <div class="modalbox">
                 <div class="modal" id="modal-EXHIBITION">
                     <div class="modal-content">
-                        <button class="close-btn">&times;</button>
+                        <button class="close-btn"  id="closeExhibition">&times;</button>
                         <h2>EXHIBITION</h2>
                         <p>擔任專案負責人及客戶窗口<br>負責專案時程管控、結構及平面設計發想、互動設計、餐點規劃、贈品規劃、現場監工</p>
                     </div>
+                    
+                    <div class="carousel-2rows">
+                        <div class="marquee-row">
+                            <div class="track">
+                                <div class="pic"><img src="./image/EXHIBITION/1.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/2.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/3.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/4.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/5.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/6.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/7.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/8.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/9.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/10.jpg" /></div>
+
+                                <div class="pic"><img src="./image/EXHIBITION/1.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/2.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/3.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/4.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/5.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/6.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/7.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/8.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/9.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/10.jpg" /></div>
+                            </div>    
+                        </div>
+                        <div class="marquee-row reverse">
+                            <div class="track">
+                                <div class="pic"><img src="./image/EXHIBITION/a.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/b.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/c.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/d.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/e.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/f.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/g.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/h.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/i.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/j.jpg" /></div>
+
+                                <div class="pic"><img src="./image/EXHIBITION/a.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/b.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/c.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/d.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/e.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/f.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/g.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/h.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/i.jpg" /></div>
+                                <div class="pic"><img src="./image/EXHIBITION/j.jpg" /></div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 
                 <div class="modal" id="modal-SYMPOSIUM">
@@ -148,8 +202,6 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
 
         <section id="tools">

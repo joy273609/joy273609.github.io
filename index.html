@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap" rel="stylesheet">
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="myJS.js"></script>
 </head>
 <body>
     <div class="header">
@@ -58,25 +61,95 @@
         <section id="projects">
             <h1 class="comme-bold">PROJECTS</h1>
             <div class="pjBox">
-                <div class="card card1">
-                    <h2>Exhibition</h2>
+                <div class="card card1" data-target="#modal-EXHIBITION">
+                    <h2>EXHIBITION</h2>
                 </div>
-                <div class="card card2">
-                    <h2>Symposium<br>&<br>Webinar</h2>
+                <div class="card card2" data-target="#modal-SYMPOSIUM">
+                    <h2>SYMPOSIUM</h2>
                 </div>
-                <div class="card card3">
+                <div class="card card3" data-target="#modal-WEBINAR">
+                    <h2>WEBINAR</h2>
+                </div>
+                <div class="card card4" data-target="#modal-DESIGN">
+                    <h2>DESIGN</h2>
+                </div>
+                <div class="card card5" data-target="#modal-FLIM">
+                    <h2>FLIM</h2>
+                </div>
+                <div class="card card6" data-target="#modal-Calendar">
                     <h2>Calendar<br>System</h2>
                 </div>
-                <div class="card card4">
+                <div class="card card7" data-target="#modal-helper">
                     <h2>回診小幫手</h2>
                 </div>
-                <div class="card card5">
-                    <h2>寵物登記數據<br>統計表</h2>
-                </div>
-                <div class="card card6">
+                <div class="card card8" data-target="#modal-dog">
                     <h2>寵物登記數據<br>預測工具</h2>
                 </div>
             </div>
+
+            <div class="modal-overlay"></div>
+            <div class="modalbox">
+                <div class="modal" id="modal-EXHIBITION">
+                    <div class="modal-content">
+                        <button class="close-btn">&times;</button>
+                        <h2>EXHIBITION</h2>
+                        <p>擔任專案負責人及客戶窗口<br>負責專案時程管控、結構及平面設計發想、互動設計、餐點規劃、贈品規劃、現場監工</p>
+                    </div>
+                </div>
+                
+                <div class="modal" id="modal-SYMPOSIUM">
+                    <div class="modal-content">
+                        <button class="close-btn">&times;</button>
+                        <h2>SYMPOSIUM</h2>
+                        <p>擔任專案負責人及客戶窗口<br>負責專案時程管控、視覺及佈置物設計發想、燈光及硬體設備規劃、互動設計、場地規劃、贈品規劃、影片製作</p>
+                    </div>
+                </div>
+                <div class="modal" id="modal-WEBINAR">
+                    <div class="modal-content">
+                        <button class="close-btn">&times;</button>
+                        <h2>WEBINAR</h2>
+                        <p>擔任專案負責人及客戶窗口<br>負責專案時程管控、視覺設計發想、硬體設備規劃、互動設計、影片製作</p>
+                    </div>
+                </div>
+                <div class="modal" id="modal-DESIGN">
+                    <div class="modal-content">
+                        <button class="close-btn">&times;</button>
+                        <h2>DESIGN</h2>
+                        <p>這裡是 SYMPOSIUM 的詳細內容。</p>
+                    </div>
+                </div>
+                <div class="modal" id="modal-FLIM">
+                    <div class="modal-content">
+                        <button class="close-btn">&times;</button>
+                        <h2>FLIM</h2>
+                        <p>這裡是 SYMPOSIUM 的詳細內容。</p>
+                    </div>
+                </div>
+                <div class="modal" id="modal-Calendar">
+                    <div class="modal-content">
+                        <button class="close-btn">&times;</button>
+                        <h2>Calendar System</h2>
+                        <p>這裡是 SYMPOSIUM 的詳細內容。</p>
+                    </div>
+                </div>
+                <div class="modal" id="modal-helper">
+                    <div class="modal-content">
+                        <button class="close-btn">&times;</button>
+                        <h2>回診小幫手</h2>
+                        <p>這裡是 SYMPOSIUM 的詳細內容。</p>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal-dog">
+                    <div class="modal-content">
+                        <button class="close-btn">&times;</button>
+                        <h2>寵物登記數據預測工具</h2>
+                        <p>這裡是 SYMPOSIUM 的詳細內容。</p>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
 
         <section id="tools">

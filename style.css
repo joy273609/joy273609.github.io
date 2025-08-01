@@ -173,7 +173,7 @@ a:visited{
 
 #experience{
     clear: both;
-    background-image: url("image/experience.jpg");
+    background-image: url(image/experience.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

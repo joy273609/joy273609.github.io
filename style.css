@@ -201,7 +201,7 @@ a:visited{
 }
 
 #projects{
-    background-image: url(./image/project.JPG);
+    background-image: url(image/project.JPG);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
